@@ -1,9 +1,5 @@
 package cn.afterturn.gen.modular.code.controller;
 
-import com.alibaba.fastjson.JSON;
-import com.baomidou.mybatisplus.mapper.EntityWrapper;
-import com.baomidou.mybatisplus.plugins.Page;
-
 import cn.afterturn.gen.common.annotion.BussinessLog;
 import cn.afterturn.gen.common.annotion.Permission;
 import cn.afterturn.gen.common.constant.factory.PageFactory;
@@ -22,7 +18,9 @@ import cn.afterturn.gen.modular.code.service.IDbInfoService;
 import cn.afterturn.gen.modular.code.service.ITableConvertServer;
 import cn.afterturn.gen.modular.code.service.ITableInfoService;
 import cn.afterturn.gen.modular.system.warpper.BeanKeyConvert;
-
+import com.alibaba.fastjson.JSON;
+import com.baomidou.mybatisplus.mapper.EntityWrapper;
+import com.baomidou.mybatisplus.plugins.Page;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,10 +31,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.Map;
-
-import javax.annotation.Resource;
 
 /**
  * 控制器

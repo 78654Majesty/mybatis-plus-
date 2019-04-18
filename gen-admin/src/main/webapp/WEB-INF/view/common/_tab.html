@@ -6,11 +6,7 @@
             <li class="nav-header">
                 <div class="dropdown profile-element">
                     <span><img alt="image" class="img-circle"
-                               @if(isEmpty(avatar)){
-                                    src="${ctxPath}/static/img/p.png"
-                               @}else{
-                                    src="${ctxPath}/kaptcha/${avatar}"
-                               @}
+                               src="${ctxPath}/static/img/p.png"
                                width="64px" height="64px"/></span>
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                         <span class="clear">

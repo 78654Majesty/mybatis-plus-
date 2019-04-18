@@ -1,5 +1,15 @@
 package cn.afterturn.gen.core.aop;
 
+import cn.afterturn.gen.common.annotion.BussinessLog;
+import cn.afterturn.gen.common.constant.dictmap.base.AbstractDictMap;
+import cn.afterturn.gen.common.constant.dictmap.factory.DictMapFactory;
+import cn.afterturn.gen.core.log.LogManager;
+import cn.afterturn.gen.core.log.LogObjectHolder;
+import cn.afterturn.gen.core.log.factory.LogTaskFactory;
+import cn.afterturn.gen.core.shiro.ShiroKit;
+import cn.afterturn.gen.core.shiro.ShiroUser;
+import cn.afterturn.gen.core.support.HttpKit;
+import cn.afterturn.gen.core.util.Contrast;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
 import org.aspectj.lang.annotation.Around;
@@ -12,17 +22,6 @@ import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Method;
 import java.util.Map;
-
-import cn.afterturn.gen.common.annotion.BussinessLog;
-import cn.afterturn.gen.common.constant.dictmap.base.AbstractDictMap;
-import cn.afterturn.gen.common.constant.dictmap.factory.DictMapFactory;
-import cn.afterturn.gen.core.log.LogManager;
-import cn.afterturn.gen.core.log.LogObjectHolder;
-import cn.afterturn.gen.core.log.factory.LogTaskFactory;
-import cn.afterturn.gen.core.shiro.ShiroKit;
-import cn.afterturn.gen.core.shiro.ShiroUser;
-import cn.afterturn.gen.core.support.HttpKit;
-import cn.afterturn.gen.core.util.Contrast;
 
 /**
  * 日志记录

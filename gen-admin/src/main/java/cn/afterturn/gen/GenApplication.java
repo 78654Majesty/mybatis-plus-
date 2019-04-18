@@ -2,13 +2,9 @@ package cn.afterturn.gen;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
-
-import cn.afterturn.gen.config.properties.GunsProperties;
 
 /**
  * SpringBoot方式启动类
@@ -23,6 +19,6 @@ public class GenApplication extends WebMvcConfigurerAdapter {
 
     public static void main(String[] args) {
         SpringApplication.run(GenApplication.class, args);
-        logger.info("Lemur Gen Application is success!");
+        logger.info("HerMajesty Application is success!");
     }
 }
